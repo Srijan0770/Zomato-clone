@@ -1,0 +1,201 @@
+/* Reset and Base */
+body, h1, p, ul {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background: linear-gradient(to right, #ff5f6d, #ffc371); */
+  font-family: Arial, sans-serif;
+  color: #333;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffeb3b;
+}
+
+/* Main Content */
+main {
+  text-align: center;
+  margin: 50px auto;
+  padding: 20px;
+}
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-background video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container {
+    background-image: url('https://b.zmtcdn.com/data/o2_assets/110a09a9d81f0e5305041c1b507d0f391743058910.png');
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center; /* Centers the background image */
+    padding: 20px; /* Add some padding around the content */
+    color: white; /* Adjust text color for contrast if needed */
+}
+
+
+ img {
+  width: 150px;
+  display: block;              /* Makes margin auto work */
+  margin: 0 auto 20px auto;    /* Centers image horizontally and gives bottom margin */
+  transition: all 0.3s ease;   /* Fixes transition syntax */
+}
+
+
+
+.subtext {
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  /* background-color: crimson; */
+  color:#ffebcd;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+p{
+  font-size: 18px;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Floating Images */
+.info-box {
+    background-color: white;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    border-radius: 1.5rem;
+    border: 1px solid #f00; /* Example border color */
+    padding: 1rem;
+    box-shadow: 0 2.8px 13.4px rgba(0, 0, 0, 0.09);
+}
+
+.info-box .flex {
+    display: flex;
+    align-items: center;
+}
+
+.info-box .text-2xl {
+    font-size: 1.5rem; /* Adjust font size */
+    font-weight: bold;
+    color: #4A90E2; /* Example color */
+}
+
+.info-box .text-slateGrey {
+    color: #7D7D7D; /* Example color */
+}
+
+.info-box img {
+    margin-left: 1rem;
+    max-height: 3rem; /* Adjusted image size */
+    width: auto; /* Maintain aspect ratio */
+}
+
+.border-l {
+    border-left: 1px solid #E0E0E0; /* Example border color */
+}
+
+@media (min-width: 768px) {
+    .info-box .text-2xl {
+        font-size: 2rem; /* Larger font size for larger screens */
+    }
+    
+    .info-box img {
+        max-height: 4rem; /* Larger image size for larger screens */
+    }
+}
+
+@media (min-width: 1024px) {
+    .info-box .text-2xl {
+        font-size: 2.5rem; /* Even larger font size for extra large screens */
+    }
+    
+    .info-box img {
+        max-height: 5rem; /* Even larger image size for extra large screens */
+    }
+}
+p2{
+  font-size: 18px;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #e91e63;
+  color: white;
+  font-size: 14px;
+}
+
+.footer-highlight {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffebcd;
+  margin-bottom: 10px;
+}
